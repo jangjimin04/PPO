@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--내비게이션 바-->
+    <section class="nav">
+        <div class="nav_top">
+            <img class="nav_top_img" src="./img/nav_my_img.png" alt="프로필 사진">
+            <div class="nav_top_text">
+                <p>Jang Jimin</p>
+            </div>
+        </div>
+        <div class="nav_menu">
+            <div class="nav_menu_home" id="nav_menu_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4 21V9l8-6 8 6v12h-6v-7h-4v7Zm2-2h2v-7h8v7h2v-9l-6-4.5L6 10Zm6-6.75Z"/></svg>
+                <p>Home</p>
+            </div>
+            <div class="nav_menu_profile" id="nav_menu_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563.437-.712 1.162-1.087 1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5-.138-.225-.363-.35-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                <p>Profile</p>
+            </div>
+            <div class="nav_menu_skills" id="nav_menu_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m9.675 13.7.875-2.85L8.25 9h2.85l.9-2.8.9 2.8h2.85l-2.325 1.85.875 2.85-2.3-1.775ZM6 23v-7.725q-.95-1.05-1.475-2.4Q4 11.525 4 10q0-3.35 2.325-5.675Q8.65 2 12 2q3.35 0 5.675 2.325Q20 6.65 20 10q0 1.525-.525 2.875T18 15.275V23l-6-2Zm6-7q2.5 0 4.25-1.75T18 10q0-2.5-1.75-4.25T12 4Q9.5 4 7.75 5.75T6 10q0 2.5 1.75 4.25T12 16Zm-4 4.025L12 19l4 1.025v-3.1q-.875.5-1.887.787Q13.1 18 12 18t-2.113-.288Q8.875 17.425 8 16.925Zm4-1.55Z"/></svg>
+                <p>Skills</p>
+            </div>
+            <div class="nav_menu_portfolio" id="nav_menu_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M7 17h2.1l6-5.95-2.15-2.15L7 14.85Zm8.8-6.65 1.05-1.1Q17 9.1 17 8.9q0-.2-.15-.35l-1.4-1.4Q15.3 7 15.1 7q-.2 0-.35.15l-1.1 1.05ZM5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h4.2q.325-.9 1.088-1.45Q11.05 1 12 1t1.713.55Q14.475 2.1 14.8 3H19q.825 0 1.413.587Q21 4.175 21 5v14q0 .825-.587 1.413Q19.825 21 19 21Zm0-2h14V5H5v14Zm7-14.75q.325 0 .538-.213.212-.212.212-.537 0-.325-.212-.538-.213-.212-.538-.212-.325 0-.537.212-.213.213-.213.538 0 .325.213.537.212.213.537.213ZM5 19V5v14Z"/></svg>
+                <p>Portfolio</p>
+            </div>
+            <div class="nav_menu_contact" id="nav_menu_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7L4 8v10h16V8Zm0-2 8-5H4ZM4 8V6v12Z"/></svg>
+                <p>Contact</p>
+            </div>
+        </div>
+    </section>
+
+    <!--각 페이지-->
+    <div class="main_container">
+
+        <!--홈-->
+        <section class="contents home">
+            <img class="home_shape_img" src="./img/home_shape.png" alt="도형">
+            <div class="home_text">
+                <div class="home_main_text">
+                    <p>Welcome To My</p>
+                    <p>Portfolio :)</p>
+                </div>
+                <div class="home_sub_text">
+                    <p>I'm <span>Web Designer</span></p>
+                </div>
+            </div>
+            <img class="home_my_img" src="./img/my_right.png" alt="내사진">
+        </section>
+
+        <!--프로필-->
+        <section class="contents profile">
+
+        </section>
+
+    </div>
+
+</body>
+</html>

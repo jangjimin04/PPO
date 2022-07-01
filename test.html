@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * { margin: 0; padding: 0; }
+        aside { 
+            position: fixed;
+            width: 230px;
+            background: green;
+            height: 100vh;
+        }
+
+        .main-container{ 
+            padding-left: 230px;
+        }
+/* Home Start */
+        .home {
+            min-height: 100vh;
+            background: rgb(21, 77, 117);
+        }
+/* Home End */        
+/* About Start */
+        .about {
+            min-height: 100vh;
+            background: rgb(158, 49, 27);
+        }
+/* About End */
+/* Contact Start */
+        .contact {
+            min-height: 100vh;
+            background: rgb(91, 52, 188);
+        }
+/* Contact End */
+
+.section {
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    position:fixed;
+    left: 230px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+.section.active {
+    z-index: 10;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+    0% { transform: translateX(100%);}
+    100% { transform: translateX(0);}
+}
+
+
+    </style>
+
+
+<aside>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+</aside>
+
+
+
+<!-- Main Container Start -->
+<div class="main-container">
+
+    <!-- Home Start -->
+    <section class="section home active">
+
+    </section>
+    <!-- <!— Home End —> -->
+    <!-- <!— About Start —> -->
+    <section class="section about">
+
+    </section>
+    <!-- <!— About End —> -->
+    <!-- <!— Contact Start —> -->
+    <section class="section contact">
+
+    </section>
+    <!-- <!— Contact End —> -->
+
+</div>
+<!-- <!— Main Container End —> -->
+
+
+</body>
+</html>
